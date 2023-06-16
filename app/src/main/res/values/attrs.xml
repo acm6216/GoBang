@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorControlNormal" format="color" />
+    <attr name="colorPrimary" format="color" />
+    <attr name="colorAppBarSurface" format="color" />
+    <attr name="motionInterpolatorPersistent" format="reference"/>
+
+    <declare-styleable name="RailView">
+        <attr name="nav_menu" format="reference"/>
+        <attr name="nav_is_horizontal" format="boolean"/>
+        <attr name="nav_auto" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="GoBangView">
+        <attr name="is_horizontal" format="boolean"/>
+    </declare-styleable>
+
+</resources>

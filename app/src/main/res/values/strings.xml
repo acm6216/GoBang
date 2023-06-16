@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">奕</string>
+
+    <string name="action_settings">设置</string>
+    <string name="action_help">帮助</string>
+    <string name="action_undo">悔棋</string>
+    <string name="action_save">保存对局</string>
+    <string name="action_save_load">加载对局</string>
+    <string name="action_new_game">重新开始</string>
+
+    <string name="close">关闭</string>
+
+    <string name="solution_saved">已保存</string>
+    <string name="solution_save_error_empty">当前不能保存：没有落子数据</string>
+    <string name="solution_save_error_ai">当前不能保存：AI 思考中，请稍等</string>
+    
+    <string name="solution_new_title">重新开始会清空当前数据，是否继续此操作？</string>
+    <string name="solution_new_ok">继续</string>
+    <string name="solution_new_close">取消</string>
+    <string name="solution_undo">棋盘无棋子</string>
+    <string name="solution_new_error">已是新局</string>
+    <string name="solution_game_over_none">游戏结束 平局</string>
+    <string name="solution_game_over_ai">游戏结束 AI 获胜</string>
+    <string name="solution_game_over_human">游戏结束 黑棋 获胜</string>
+
+    <string name="about_title">关于</string>
+    <string name="about_ok">知道了</string>
+
+    <string name="menu_save_load">@string/action_save_load</string>
+    <string name="menu_save_preview">对局回放</string>
+    <string name="menu_save_delete">删除对局</string>
+
+    <string name="solution_fragment_label">Solution Fragment</string>
+    <string name="save_fragment_label">Save Fragment</string>
+    <string name="settings_fragment_label">Settings Fragment</string>
+
+    <string name="set_dark_mode">深色模式</string>
+    <string name="set_key_dark_mode">set_key_dark_mode</string>
+    <string name="set_chess_board_size">棋盘尺寸</string>
+    <string name="set_chess_board_size_summary">此项会清空棋盘数据</string>
+    <string name="set_chess_board_size_def">15 x 15</string>
+    <string name="set_key_chess_board_size">set_key_chess_board_size</string>
+    <string-array name="set_chess_board_size_values">
+        <item>@string/set_chess_board_size_def</item>
+        <item>17 x 17</item>
+        <item>19 x 19</item>
+    </string-array>
+    <string name="set_chess_sequence">显示棋子序号</string>
+    <string name="set_key_chess_sequence">set_key_chess_sequence</string>
+    <string name="set_chess_last_sequence">显示最后一颗棋子序号</string>
+    <string name="set_key_chess_last_sequence">set_key_chess_last_sequence</string>
+    <string name="set_magnifier">显示放大镜</string>
+    <string name="set_key_magnifier">set_key_magnifier</string>
+    <string name="set_chess_board_bg">棋盘背景</string>
+    <string name="set_chess_board_bg_summary">黑暗模式可见性较高</string>
+    <string-array name="set_chess_board_bg_value">
+        <item>关闭</item>
+        <item>流星</item>
+        <item>萤火虫</item>
+    </string-array>
+    <string name="set_key_chess_board_bg">set_key_chess_board_bg</string>
+</resources>

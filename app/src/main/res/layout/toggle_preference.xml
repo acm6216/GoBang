@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="?android:attr/listPreferredItemPaddingLeft"
+    android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+    android:paddingBottom="?android:attr/listPreferredItemPaddingRight"
+    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:id="@+id/icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="ContentDescription,RtlSymmetry" />
+
+    <TextView
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:id="@+id/title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:textColor="?android:attr/textColorSecondary"
+        style="@style/PreferenceSummaryTextStyle"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toEndOf="@id/icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/summary_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:ignore="PrivateResource,RtlSymmetry" />
+
+    <HorizontalScrollView
+        android:clickable="false"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        app:layout_constraintStart_toEndOf="@id/icon"
+        app:layout_constraintTop_toBottomOf="@id/summary_text"
+        android:layout_marginTop="4dp"
+        android:layout_width="wrap_content"
+        android:fillViewport="true"
+        android:layout_height="wrap_content"
+        tools:ignore="RtlSymmetry">
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:clickable="false"
+            android:orientation="horizontal"
+            android:id="@+id/toggle_group"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

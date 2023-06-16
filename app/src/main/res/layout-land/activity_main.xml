@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/activity_root"
+        app:paddingBottomSystemBars="@{true}"
+        app:paddingTopSystemBars="@{true}"
+        app:paddingLeftSystemBars="@{true}"
+        app:paddingRightSystemBars="@{true}"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.MainActivity">
+
+        <fragment
+            android:id="@+id/solution"
+            android:name="cen.xiaoyuan.gobang.fragment.SolutionFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="cen.xiaoyuan.gobang.fragment.SolutionFragment"
+            tools:ignore="FragmentTagUsage" />
+
+        <cen.xiaoyuan.gobang.view.RailView
+            android:id="@+id/rail"
+            android:layout_gravity="center_vertical|end"
+            android:layout_width="?actionBarSize"
+            android:layout_height="wrap_content"
+            app:nav_menu="@menu/menu_main"
+            app:nav_is_horizontal="false"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

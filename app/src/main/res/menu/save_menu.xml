@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/menu_save_load"
+        android:id="@+id/menu_save_load"/>
+    <item
+        android:title="@string/menu_save_preview"
+        android:id="@+id/menu_save_preview"/>
+    <item
+        android:title="@string/menu_save_delete"
+        android:id="@+id/menu_save_delete"/>
+</menu>

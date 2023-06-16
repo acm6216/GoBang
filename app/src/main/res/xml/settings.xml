@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        android:title="@string/set_dark_mode"
+        android:icon="@drawable/twotone_dark_mode"
+        android:key="@string/set_key_dark_mode"/>
+
+    <cen.xiaoyuan.gobang.preference.ChessBoardPreference
+        app:layout="@layout/toggle_preference"
+        android:icon="@drawable/twotone_grid_view"
+        android:key="@string/set_key_chess_board_size"
+        android:summary="@string/set_chess_board_size_summary"
+        android:title="@string/set_chess_board_size"/>
+    <cen.xiaoyuan.gobang.preference.BackgroundPreference
+        android:icon="@drawable/twotone_extension"
+        app:layout="@layout/toggle_preference"
+        android:title="@string/set_chess_board_bg"
+        android:summary="@string/set_chess_board_bg_summary"
+        android:key="@string/set_key_chess_board_bg"/>
+    <SwitchPreferenceCompat
+        app:allowDividerAbove="true"
+        android:icon="@drawable/twotone_magnfier"
+        android:defaultValue="true"
+        android:key="@string/set_key_magnifier"
+        android:title="@string/set_magnifier"/>
+    <SwitchPreferenceCompat
+        android:icon="@drawable/twotone_pin_number"
+        android:defaultValue="true"
+        android:key="@string/set_key_chess_sequence"
+        android:title="@string/set_chess_sequence"/>
+    <SwitchPreferenceCompat
+        android:defaultValue="false"
+        android:key="@string/set_key_chess_last_sequence"
+        android:title="@string/set_chess_last_sequence"/>
+</PreferenceScreen>

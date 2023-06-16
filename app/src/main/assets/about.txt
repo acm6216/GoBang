@@ -1,0 +1,7 @@
+参考的开源代码：
+ZhiZhangAIService:https://github.com/anlingyi/xechat-idea/blob/.../plugin/game/gobang/ZhiZhangAIService.java
+StarrySky:https://github.com/auv1107/huaxia.widget
+StarView:https://blog.csdn.net/houdada_/article/details/113729040
+
+岑小缘
+2022年12月2日 于 钟山

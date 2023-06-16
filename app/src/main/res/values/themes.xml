@@ -1,0 +1,36 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="BaseGoBang" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowAnimationStyle">@android:style/Animation.Toast</item>
+    </style>
+    <style name="GoBang" parent="BaseGoBang">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/google_blue_600</item>
+        <item name="colorPrimaryVariant">@color/google_blue_600</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/google_blue_600</item>
+        <item name="colorSecondaryVariant">@color/google_blue_600</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!-- Customize your theme here. -->
+        <item name="colorAppBarSurface">@color/white</item>
+        <item name="colorControlNormal">@color/google_grey_900</item>
+        <item name="materialCardViewStyle">@style/Widget.GoBang.CardView</item>
+        <item name="switchStyle">@style/Widget.GoBang.Material3.CompoundButton.Switch</item>
+    </style>
+
+    <style name="GoBang.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="GoBang.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="GoBang.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:fillViewport="true"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:tag="cen.xiaoyuan.gobang.fragment.SettingsFragment"
+            android:name="cen.xiaoyuan.gobang.fragment.SettingsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="FragmentTagUsage" />
+    </androidx.core.widget.NestedScrollView>
+
+</layout>
